@@ -1,17 +1,21 @@
     
 function validate(){
-    alert("hi");
+    
     var text1 = document.getElementById("fname").value;
     var text2 = document.getElementById("lname").value;
     var user = document.getElementById("email").value;
-    var password= document.getElementById("psw").value;
-    document.getElementById("demo").innerHTML=text1+text2+user+password;
-    sessionStorage.setItem("fname", text1);
-    sessionStorage.setItem("lname", text2);
-    sessionStorage.setItem("user", user);
-    sessionStorage.setItem("pwd", password);
-    localStorage.user = user;
-    localStorage.password = password;
+    var password= document.getElementById("pass").value;
+    var confirmPassword= document.getElementById("reppass").value;
+    if(password != confirmPassword){
+        alert("Password and repeat password are not same, Please try again!!!")
+        document.getElementById("pass").focus();
+        returnTOPreviousPage();
+        return false;
+    }
     alert(text1+text2+user+password);
+  
      
+}
+function returnTOPreviousPage(){
+    window.history.back();
 }

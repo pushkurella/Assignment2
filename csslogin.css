@@ -5,8 +5,8 @@ body{
     overflow: hidden;
  }
 * {box-sizing: border-box}
-/* Full-width input fields */
-input[type=text], input[type=password],input[type=email] {
+
+input[type=email], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -14,13 +14,11 @@ input[type=text], input[type=password],input[type=email] {
     border: none;
     background: #f1f1f1;
 }
-
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
-
 /* Set a style for all buttons */
 button {
     background-color: #4CAF50;
@@ -33,43 +31,28 @@ button {
     opacity: 0.8;
     
 }
-    
 button:hover {
     
     opacity:1;
 }
-
 /* Extra styles for the cancel button */
 .cancelbtn {
     padding: 14px 20px;
-    background-color: #f44336;
+    background-color: #23abb2;
 }
-
-
 .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
- 
-  
+  padding-bottom: 15px;
+  margin-bottom: 20px;
 }
-    .resetbtn{
-        float: left;
-        width: 100%;
-        background: #474e5d;
-        color: white;
-        
-    }
-    .resetbtn:hover{
-        background: #f1f1f1;
-        color: #474e5d;
-        
-    }
+    
     .signupbtn:hover{
         background: green;
      
     }
     .cancelbtn:hover{
-        background: red;
+        background: #208e87;
         
     }
 .close {
@@ -81,36 +64,32 @@ button:hover {
     color: #ffffff;
     
 }
-
 .close:hover,
 .close:focus {
     color: #ff0000;
     cursor: pointer;
 }
-
-
 /* Add padding to container elements */
 .container {
     padding: 45px;
 }
-
 /* The (background) */
 .modal {
-    
+    overflow: hidden;
     display: inline-block; 
     position: fixed; 
     z-index: 1; 
     left: 0px;
     right: 10px;
-    top: 5px;
+    top: 5;
     width: 90%; 
     height: 90%; 
     overflow: auto;
-    background-color: #474e5d;
+    background-color: #fefefe;
     padding: 50px 50px 50px 50px;
+    margin-left: 70px;
     
 }
-
 /* Modal Content/Box */
 .modal-content {
     overflow: hidden;
@@ -122,22 +101,22 @@ button:hover {
     border: none;
     
 }
-
 /* Style the horizontal ruler */
 hr {
     border: 1px solid #f1f1f1;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     
 }
     h2{
+        
         text-align: center;
         color: white;
     }
-    h1,p,label{
-        text-align: center;
-        color: #474e5d;
+      h1,p,label{
+        
+        color: #474e5d ;
     }
-/* Change styles for cancel button and signup button on extra small screens */
+
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
        width: 100%;
