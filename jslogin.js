@@ -16,7 +16,7 @@ var regEmail = getParm(queryString,'email');
     
     
     if(email != regEmail || regPassword != password){
-        alert("User Authentication failes!!!/n Please Register.")
+        alert("User Authentication failes!!!/n Please login with your registered email and password.")
         return false;
     }
     

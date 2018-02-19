@@ -1,9 +1,9 @@
     
 function validate(){
     
-    var text1 = document.getElementById("fname").value;
-    var text2 = document.getElementById("lname").value;
-    var user = document.getElementById("email").value;
+    var firstName = document.getElementById("fname").value;
+    var lastName = document.getElementById("lname").value;
+    var userEmail = document.getElementById("email").value;
     var password= document.getElementById("pass").value;
     var confirmPassword= document.getElementById("reppass").value;
     if(password != confirmPassword){
