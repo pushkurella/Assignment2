@@ -36,22 +36,25 @@ button:hover {
     opacity:1;
 }
 /* Extra styles for the cancel button */
-.registerbtn {
-    padding: 14px 20px;
-    background-color: #23abb2;
-}
-.signupbtn {
+
+.registerbtn,.signupbtn {
   float: left;
   width: 100%;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
+.registerbtn{
     
+    background: #ff9900;
+}
     .signupbtn:hover{
         background: green;
      
     }
-   
+    .cancelbtn:hover{
+        background: #208e87;
+        
+    }
 .close {
     position: absolute;
     right: 35px;

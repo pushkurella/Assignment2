@@ -1,11 +1,11 @@
 function validate(){
-        alert('hi');
+        
 var queryString = location.search.substring(1);
 var regFirstName = getParm(queryString,'fname');
 var regLastName = getParm(queryString,'lname');
 var regPassword = getParm(queryString,'pass');
 var regEmail = getParm(queryString,'email');
-      if(regFirstName=="" && regLastName=="" && regEmail==""){
+      if(regFirstName=="" && regLastName=="" || regEmail==""){
         alert("Sorry, You have'nt registered!!!")
         
         return false;
