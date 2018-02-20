@@ -1,6 +1,28 @@
 function validate(){
         alert('hi');
 var queryString = location.search.substring(1);
+var regFirstName = getParm(queryString,'fname');
+var regLastName = getParm(queryString,'lname');
+var regPassword = getParm(queryString,'pass');
+var regEmail = getParm(queryString,'email');
+      if(regFirstName=="" && regLastName=="" && regEmail==""){
+        alert("Sorry, You have'nt registered!!!")
+        
+        return false;
+      }
+// login fields
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("pass").value;
+    
+    
+    if(email != regEmail || regPassword != password){
+        alert("User Authentication failes!!!/n Please login with your registered email and password.")
+        return false;
+    }
+    
+}
+
+
 var firstName = getParm(queryString,'fname');
 var lastName = getParm(queryString,'lname');
 var password = getParm(queryString,'pass');
@@ -19,4 +41,9 @@ function getParm(queryString,parm) {
         return unescape(queryString.substring(startPos,endPos));
     }
     return '';
+
+}
+function goToRegistration(){
+    
+    window.location.href ="Registrationpage.html";
 }

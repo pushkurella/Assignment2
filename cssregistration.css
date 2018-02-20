@@ -33,6 +33,7 @@ button {
     opacity: 0.8;
     
 }
+
 .button1 {
     background-color: #4CAF50;
     border: none;
@@ -83,8 +84,7 @@ button:hover {
 
 .cancelbtn, .signupbtn {
   float: left;
-  width: 50%;
- 
+  width: 100%;
   
 }
     .resetbtn{
@@ -184,6 +184,7 @@ hr {
        width: 100%;
     }
 }
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -226,6 +227,5 @@ hr {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-
 
 </style>
