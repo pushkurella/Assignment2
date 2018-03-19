@@ -1,6 +1,4 @@
 
-
-
 function insertRow(i)
 {
     var x=document.getElementById('transtable').insertRow(1);

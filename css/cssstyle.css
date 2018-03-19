@@ -33,7 +33,7 @@ button {
     opacity: 0.8;
     
 }
-.btn1,.btn2{
+.btn1,.btn2,.btn3{
     height: 120px;
     padding: 20px;
     margin: 30px;
@@ -50,6 +50,11 @@ button {
        color: black;
     font-size: 30px;
     background: #6699ff;
+}
+.btn3{
+       color: black;
+    font-size: 30px;
+    background: #d80412;
 }
 button:hover {
     
