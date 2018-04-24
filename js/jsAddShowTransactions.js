@@ -9,9 +9,16 @@ window.onload=function(){
 function addToTransactions(){
     var itemName=$("item").value;
     var cost=$("cost").value;
+    var itemNameRegex=new RegExp("^[A-Za-z0-9-_ ]+$");
     if(itemName=='' || itemName.length==0){
         alert('Item name must not be empty');
     }
+    else if(itemName.length<=10){
+        alert('Amount should be atleast 10 characters')
+    }
+    else if(!itemNameRegex.test(itemName)){
+            alert('item name does not support such characters.')
+            }
     else if(isNaN(cost)){
         alert('Amount should be a number');
     }
